@@ -14,6 +14,11 @@
 		FD8630E627AD4CB0000FC4D8 /* CommentCardWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8630E527AD4CB0000FC4D8 /* CommentCardWriterTests.swift */; };
 		FD8630F027AD4CB0000FC4D8 /* CommentCardWriterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8630EF27AD4CB0000FC4D8 /* CommentCardWriterUITests.swift */; };
 		FD8630F227AD4CB0000FC4D8 /* CommentCardWriterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8630F127AD4CB0000FC4D8 /* CommentCardWriterUITestsLaunchTests.swift */; };
+		FD86310027AD4FD4000FC4D8 /* StepSlider in Frameworks */ = {isa = PBXBuildFile; productRef = FD8630FF27AD4FD4000FC4D8 /* StepSlider */; };
+		FD86310327AD50C6000FC4D8 /* GenerationFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86310227AD50C6000FC4D8 /* GenerationFormItem.swift */; };
+		FD86310527AD54AB000FC4D8 /* GeneratedCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86310427AD54AA000FC4D8 /* GeneratedCommentView.swift */; };
+		FD86310727AD5722000FC4D8 /* SelectableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86310627AD5722000FC4D8 /* SelectableButton.swift */; };
+		FD86310927AD5835000FC4D8 /* DifficultyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86310827AD5835000FC4D8 /* DifficultyPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,10 @@
 		FD8630EB27AD4CB0000FC4D8 /* CommentCardWriterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentCardWriterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8630EF27AD4CB0000FC4D8 /* CommentCardWriterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterUITests.swift; sourceTree = "<group>"; };
 		FD8630F127AD4CB0000FC4D8 /* CommentCardWriterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD86310227AD50C6000FC4D8 /* GenerationFormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationFormItem.swift; sourceTree = "<group>"; };
+		FD86310427AD54AA000FC4D8 /* GeneratedCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedCommentView.swift; sourceTree = "<group>"; };
+		FD86310627AD5722000FC4D8 /* SelectableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableButton.swift; sourceTree = "<group>"; };
+		FD86310827AD5835000FC4D8 /* DifficultyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD86310027AD4FD4000FC4D8 /* StepSlider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +104,8 @@
 		FD8630D327AD4CAE000FC4D8 /* CommentCardWriter */ = {
 			isa = PBXGroup;
 			children = (
+				FD86310127AD50AA000FC4D8 /* View */,
 				FD8630D427AD4CAE000FC4D8 /* CommentCardWriterApp.swift */,
-				FD8630D627AD4CAE000FC4D8 /* ContentView.swift */,
 				FD8630D827AD4CB0000FC4D8 /* Assets.xcassets */,
 				FD8630DA27AD4CB0000FC4D8 /* Preview Content */,
 			);
@@ -127,6 +137,18 @@
 			path = CommentCardWriterUITests;
 			sourceTree = "<group>";
 		};
+		FD86310127AD50AA000FC4D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD8630D627AD4CAE000FC4D8 /* ContentView.swift */,
+				FD86310227AD50C6000FC4D8 /* GenerationFormItem.swift */,
+				FD86310427AD54AA000FC4D8 /* GeneratedCommentView.swift */,
+				FD86310627AD5722000FC4D8 /* SelectableButton.swift */,
+				FD86310827AD5835000FC4D8 /* DifficultyPicker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +165,9 @@
 			dependencies = (
 			);
 			name = CommentCardWriter;
+			packageProductDependencies = (
+				FD8630FF27AD4FD4000FC4D8 /* StepSlider */,
+			);
 			productName = CommentCardWriter;
 			productReference = FD8630D127AD4CAE000FC4D8 /* CommentCardWriter.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +240,9 @@
 				Base,
 			);
 			mainGroup = FD8630C827AD4CAE000FC4D8;
+			packageReferences = (
+				FD8630FE27AD4FD4000FC4D8 /* XCRemoteSwiftPackageReference "StepSlider" */,
+			);
 			productRefGroup = FD8630D227AD4CAE000FC4D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD8630D727AD4CAE000FC4D8 /* ContentView.swift in Sources */,
+				FD86310327AD50C6000FC4D8 /* GenerationFormItem.swift in Sources */,
 				FD8630D527AD4CAE000FC4D8 /* CommentCardWriterApp.swift in Sources */,
+				FD86310727AD5722000FC4D8 /* SelectableButton.swift in Sources */,
+				FD86310927AD5835000FC4D8 /* DifficultyPicker.swift in Sources */,
+				FD86310527AD54AB000FC4D8 /* GeneratedCommentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FD8630FE27AD4FD4000FC4D8 /* XCRemoteSwiftPackageReference "StepSlider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/spromicky/StepSlider";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD8630FF27AD4FD4000FC4D8 /* StepSlider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD8630FE27AD4FD4000FC4D8 /* XCRemoteSwiftPackageReference "StepSlider" */;
+			productName = StepSlider;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FD8630C927AD4CAE000FC4D8 /* Project object */;
 }
