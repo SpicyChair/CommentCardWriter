@@ -8,8 +8,6 @@
 import Foundation
 
 class Comment:ObservableObject {
-
-    //init () {}
     
     @Published var enjoyment:Int = 0
     @Published var performance:Int = 0

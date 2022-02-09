@@ -10,16 +10,17 @@ import SwiftUI
 struct GenerationFormItem: View {
     
     var message:String
+    
     @State private var ratings:[String]
     @State private var selectedRating:String {
         didSet {
-            toChange = ratings.firstIndex(of: selectedRating) ?? 0
+            toChange(ratings.firstIndex(of: selectedRating) ?? 0)
             //print(self.selectedRatingIndex)
         }
     }
-    @State var toChange: Int
+    var toChange: (Int) -> Void
     
-    init(message:String, ratings:[String], toChange:Int) {
+    init(message:String, ratings:[String], toChange: @escaping (Int) -> Void) {
         self.ratings = ratings
         self.selectedRating = ratings[0]
         self.message = message

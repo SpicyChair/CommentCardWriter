@@ -9,18 +9,13 @@ import SwiftUI
 
 struct GeneratedCommentView: View {
     
-    @State var comment:Comment
-    
-    init () {
-        self.comment = comment
-    }
-    
+    @EnvironmentObject var comment:Comment
     
     var body: some View {
         NavigationView{
             Form {
                 Section {
-                    Text(comment.teacherRating)
+                    Text("\(comment.teacherRating)")
                 }
             }
             .navigationTitle(Text("View Comment"))

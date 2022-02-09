@@ -11,7 +11,8 @@ import SwiftUI
 struct CommentCardWriterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(comment: Comment())
+            ContentView()
+                .environmentObject(Comment())
         }
     }
 }
