@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD0C70E327B3CF2B00DF51BF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C70E227B3CF2B00DF51BF /* Comment.swift */; };
 		FD8630D527AD4CAE000FC4D8 /* CommentCardWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8630D427AD4CAE000FC4D8 /* CommentCardWriterApp.swift */; };
 		FD8630D727AD4CAE000FC4D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8630D627AD4CAE000FC4D8 /* ContentView.swift */; };
 		FD8630D927AD4CB0000FC4D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD8630D827AD4CB0000FC4D8 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD0C70E227B3CF2B00DF51BF /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		FD8630D127AD4CAE000FC4D8 /* CommentCardWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentCardWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8630D427AD4CAE000FC4D8 /* CommentCardWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterApp.swift; sourceTree = "<group>"; };
 		FD8630D627AD4CAE000FC4D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD0C70E127B3CCD200DF51BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD0C70E227B3CF2B00DF51BF /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FD8630C827AD4CAE000FC4D8 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		FD8630D327AD4CAE000FC4D8 /* CommentCardWriter */ = {
 			isa = PBXGroup;
 			children = (
+				FD0C70E127B3CCD200DF51BF /* Model */,
 				FD86310127AD50AA000FC4D8 /* View */,
 				FD8630D427AD4CAE000FC4D8 /* CommentCardWriterApp.swift */,
 				FD8630D827AD4CB0000FC4D8 /* Assets.xcassets */,
@@ -288,6 +299,7 @@
 				FD8630D727AD4CAE000FC4D8 /* ContentView.swift in Sources */,
 				FD86310327AD50C6000FC4D8 /* GenerationFormItem.swift in Sources */,
 				FD8630D527AD4CAE000FC4D8 /* CommentCardWriterApp.swift in Sources */,
+				FD0C70E327B3CF2B00DF51BF /* Comment.swift in Sources */,
 				FD86310727AD5722000FC4D8 /* SelectableButton.swift in Sources */,
 				FD86310927AD5835000FC4D8 /* DifficultyPicker.swift in Sources */,
 				FD86310527AD54AB000FC4D8 /* GeneratedCommentView.swift in Sources */,

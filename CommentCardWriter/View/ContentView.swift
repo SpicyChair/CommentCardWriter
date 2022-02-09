@@ -9,6 +9,9 @@ import SwiftUI
 import StepSlider
 
 struct ContentView: View {
+    
+    @ObservedObject var comment:Comment = Comment()
+    
     var body: some View {
         NavigationView {
             Form {

@@ -14,51 +14,8 @@ struct GenerationFormItem: View {
     
     var body: some View {
         Section {
-            VStack{
-                Text(message)
-                    .bold()
-                //Buttons or something here
-            }
-            
-            DifficultyPicker()
-            /*
-            HStack {
-                Text("5 - Very Good")
-                Spacer()
-                Button("O") {
-                    return
-                }
-            }
-            HStack {
-                Text("4 - Good")
-                Spacer()
-                Button("O") {
-                    return
-                }
-            }
-            HStack {
-                Text("3 - Average")
-                Spacer()
-                Button("O") {
-                    return
-                }
-            }
-            HStack {
-                Text("2 - Unsatisfactory")
-                Spacer()
-                Button("O") {
-                    return
-                }
-            }
-            HStack {
-                Text("1 - Awful")
-                Spacer()
-                Button("O") {
-                    return
-                }
-            }
-             */
-            
+            Text(message)
+            DifficultyPicker(ratings: ["1", "2", "3", "4", "5"])
         }
     }
 }
