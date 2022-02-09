@@ -7,12 +7,13 @@
 
 import Foundation
 
-struct Comment {
+class Comment:ObservableObject {
+
+    //init () {}
     
-    var enjoyment:Int
-    var performance:Int
-    var teacherRating:Int
-    
-    
+    @Published var enjoyment:Int = 0
+    @Published var performance:Int = 0
+    @Published var difficulty:Int = 0
+    @Published var teacherRating:Int = 0
     
 }

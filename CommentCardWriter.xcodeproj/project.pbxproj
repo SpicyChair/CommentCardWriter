@@ -19,7 +19,6 @@
 		FD86310327AD50C6000FC4D8 /* GenerationFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86310227AD50C6000FC4D8 /* GenerationFormItem.swift */; };
 		FD86310527AD54AB000FC4D8 /* GeneratedCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86310427AD54AA000FC4D8 /* GeneratedCommentView.swift */; };
 		FD86310727AD5722000FC4D8 /* SelectableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86310627AD5722000FC4D8 /* SelectableButton.swift */; };
-		FD86310927AD5835000FC4D8 /* DifficultyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86310827AD5835000FC4D8 /* DifficultyPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		FD86310227AD50C6000FC4D8 /* GenerationFormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationFormItem.swift; sourceTree = "<group>"; };
 		FD86310427AD54AA000FC4D8 /* GeneratedCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedCommentView.swift; sourceTree = "<group>"; };
 		FD86310627AD5722000FC4D8 /* SelectableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableButton.swift; sourceTree = "<group>"; };
-		FD86310827AD5835000FC4D8 /* DifficultyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +153,6 @@
 				FD86310227AD50C6000FC4D8 /* GenerationFormItem.swift */,
 				FD86310427AD54AA000FC4D8 /* GeneratedCommentView.swift */,
 				FD86310627AD5722000FC4D8 /* SelectableButton.swift */,
-				FD86310827AD5835000FC4D8 /* DifficultyPicker.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -301,7 +298,6 @@
 				FD8630D527AD4CAE000FC4D8 /* CommentCardWriterApp.swift in Sources */,
 				FD0C70E327B3CF2B00DF51BF /* Comment.swift in Sources */,
 				FD86310727AD5722000FC4D8 /* SelectableButton.swift in Sources */,
-				FD86310927AD5835000FC4D8 /* DifficultyPicker.swift in Sources */,
 				FD86310527AD54AB000FC4D8 /* GeneratedCommentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
