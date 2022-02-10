@@ -7,11 +7,12 @@
 
 import Foundation
 
-class Comment:ObservableObject {
+class Comment : ObservableObject {
     
     @Published var enjoyment:Int = 0
     @Published var performance:Int = 0
     @Published var difficulty:Int = 0
     @Published var teacherRating:Int = 0
+    @Published var subject:String = "Computer Science"
     
 }

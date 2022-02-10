@@ -44,6 +44,9 @@ struct GenerationFormItem: View {
 
 struct GenerationFormItem_Previews: PreviewProvider {
     static var previews: some View {
-        GenerationFormItem(message: "Example Message", ratings: ["1", "2", "3", "4", "5"], toChange: 0)
+        GenerationFormItem(message: "Example Message", ratings: ["1", "2", "3", "4", "5"], toChange: updateVal(newValue: 0))
+    }
+    func updateVal(newValue: Int) {
+        
     }
 }
