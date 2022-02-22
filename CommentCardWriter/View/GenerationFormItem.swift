@@ -15,16 +15,19 @@ struct GenerationFormItem: View {
     @State private var selectedRating:String {
         didSet {
             toChange(ratings.firstIndex(of: selectedRating) ?? 0)
-            //print(self.selectedRatingIndex)
+            print(selectedRating)
         }
     }
     var toChange: (Int) -> Void
+    var newValue: Int
+    @EnvironmentObject var comment:Comment
     
-    init(message:String, ratings:[String], toChange: @escaping (Int) -> Void) {
+    init(message:String, ratings:[String], toChange: @escaping (Int) -> Void, newValue: Int) {
         self.ratings = ratings
         self.selectedRating = ratings[0]
         self.message = message
         self.toChange = toChange
+        self.newValue = newValue
     }
     
     var body: some View {
@@ -44,9 +47,10 @@ struct GenerationFormItem: View {
 
 struct GenerationFormItem_Previews: PreviewProvider {
     static var previews: some View {
-        GenerationFormItem(message: "Example Message", ratings: ["1", "2", "3", "4", "5"], toChange: updateVal(newValue: 0))
+        GenerationFormItem(message: "Example Message", ratings: ["1", "2", "3", "4", "5"],
+                           toChange:
+                            {(a:Int) -> () in },
+                           newValue: 0)
     }
-    func updateVal(newValue: Int) {
-        
-    }
+    
 }

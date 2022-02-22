@@ -9,10 +9,10 @@ import Foundation
 
 class Comment : ObservableObject {
     
-    @Published var enjoyment:Int = 0
-    @Published var performance:Int = 0
-    @Published var difficulty:Int = 0
-    @Published var teacherRating:Int = 0
+    @Published var enjoyment:String = "1"
+    @Published var performance:String = "1"
+    @Published var difficulty:String = "1"
+    @Published var teacherRating:String = "1"
     @Published var subject:String = "Computer Science"
     
 }

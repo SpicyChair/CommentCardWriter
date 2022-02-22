@@ -10,12 +10,14 @@ import SwiftUI
 struct GeneratedCommentView: View {
     
     @EnvironmentObject var comment:Comment
+    var generator:Generator = Generator()
+
     
     var body: some View {
         NavigationView{
             Form {
                 Section {
-                    Text("\(comment.teacherRating)")
+                    Text(generator.generate(comment: comment))
                 }
             }
             .navigationTitle(Text("View Comment"))
