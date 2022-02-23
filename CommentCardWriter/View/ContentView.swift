@@ -13,9 +13,20 @@ struct ContentView: View {
     @EnvironmentObject var comment: Comment
     var ratings: [String] = ["1", "2", "3", "4", "5"]
     
+    
     var body: some View {
         NavigationView {
             Form {
+                
+                TextField(
+                        "Teacher name",
+                        text: $comment.teacher
+                )
+                
+                TextField(
+                        "Subject name",
+                        text: $comment.subject
+                )
                 
                 Section {
                     Text("How much have you enjoyed this subject so far?")
@@ -50,10 +61,19 @@ struct ContentView: View {
                         
                         
                 }
+                Section {
+                    Text("How willing are you to improve? (1 - Not at All, 5 - Committed)")
+                    Picker("",selection: $comment.improve) {
+                        ForEach(ratings, id: \.self) {
+                            Text($0)
+                        }
+                    
+                   }.pickerStyle(SegmentedPickerStyle())
+                        
+                        
+                }
                 
-                
-                //GenerationFormItem(message: "How can you improve in this subject?")
-                //GenerationFormItem(message: "What are you finding difficult?")
+    
                 
                 NavigationLink("Generate!") {
                     GeneratedCommentView()
