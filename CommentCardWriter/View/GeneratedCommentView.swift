@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MobileCoreServices
 
 struct GeneratedCommentView: View {
     
@@ -18,6 +19,16 @@ struct GeneratedCommentView: View {
             Form {
                 Section {
                     Text(generator.generate(comment: comment))
+                }
+                Section {
+                    
+                    HStack {
+                        Button("Copy to Clipboard") {
+                            UIPasteboard.general.setValue(generator.generate(comment: comment), forPasteboardType: "public.plain-text")
+                        }
+                    }
+                    
+                    
                 }
             }
             .navigationTitle(Text("View Comment"))
