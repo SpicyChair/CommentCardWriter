@@ -13,6 +13,7 @@ struct CommentCardWriterApp: App {
         WindowGroup {
             HomeView()
                 .environmentObject(Comment())
+                .environmentObject(SavedCommentController())
         }
     }
 }

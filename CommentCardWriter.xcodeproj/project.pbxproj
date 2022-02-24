@@ -11,6 +11,9 @@
 		FD61910027C805A600E5EDBD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6190FF27C805A600E5EDBD /* HomeView.swift */; };
 		FD61910327C806FC00E5EDBD /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61910227C806FC00E5EDBD /* FileManager.swift */; };
 		FD61910527C8082100E5EDBD /* SavedComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61910427C8082100E5EDBD /* SavedComment.swift */; };
+		FD61910727C80B9F00E5EDBD /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61910627C80B9F00E5EDBD /* GeneratorView.swift */; };
+		FD61910927C80C4000E5EDBD /* SavedCommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61910827C80C4000E5EDBD /* SavedCommentsView.swift */; };
+		FD61910B27C814E800E5EDBD /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61910A27C814E800E5EDBD /* Date.swift */; };
 		FD8630D527AD4CAE000FC4D8 /* CommentCardWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8630D427AD4CAE000FC4D8 /* CommentCardWriterApp.swift */; };
 		FD8630D927AD4CB0000FC4D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD8630D827AD4CB0000FC4D8 /* Assets.xcassets */; };
 		FD8630DC27AD4CB0000FC4D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD8630DB27AD4CB0000FC4D8 /* Preview Assets.xcassets */; };
@@ -21,7 +24,7 @@
 		FD86310327AD50C6000FC4D8 /* GenerationFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86310227AD50C6000FC4D8 /* GenerationFormItem.swift */; };
 		FD86310527AD54AB000FC4D8 /* GeneratedCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86310427AD54AA000FC4D8 /* GeneratedCommentView.swift */; };
 		FD86310727AD5722000FC4D8 /* SelectableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86310627AD5722000FC4D8 /* SelectableButton.swift */; };
-		FD90EE5427B586DA002E6E63 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD90EE5327B586DA002E6E63 /* StateController.swift */; };
+		FD90EE5427B586DA002E6E63 /* SavedCommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD90EE5327B586DA002E6E63 /* SavedCommentController.swift */; };
 		FDE5BCCF27C5974E00343590 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE5BCCE27C5974E00343590 /* Generator.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,9 @@
 		FD6190FF27C805A600E5EDBD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FD61910227C806FC00E5EDBD /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		FD61910427C8082100E5EDBD /* SavedComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedComment.swift; sourceTree = "<group>"; };
+		FD61910627C80B9F00E5EDBD /* GeneratorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
+		FD61910827C80C4000E5EDBD /* SavedCommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCommentsView.swift; sourceTree = "<group>"; };
+		FD61910A27C814E800E5EDBD /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		FD8630D127AD4CAE000FC4D8 /* CommentCardWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentCardWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8630D427AD4CAE000FC4D8 /* CommentCardWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterApp.swift; sourceTree = "<group>"; };
 		FD8630D827AD4CB0000FC4D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,7 +65,7 @@
 		FD86310227AD50C6000FC4D8 /* GenerationFormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationFormItem.swift; sourceTree = "<group>"; };
 		FD86310427AD54AA000FC4D8 /* GeneratedCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedCommentView.swift; sourceTree = "<group>"; };
 		FD86310627AD5722000FC4D8 /* SelectableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableButton.swift; sourceTree = "<group>"; };
-		FD90EE5327B586DA002E6E63 /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
+		FD90EE5327B586DA002E6E63 /* SavedCommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCommentController.swift; sourceTree = "<group>"; };
 		FDE5BCCE27C5974E00343590 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				FD0C70E227B3CF2B00DF51BF /* Comment.swift */,
-				FD90EE5327B586DA002E6E63 /* StateController.swift */,
+				FD90EE5327B586DA002E6E63 /* SavedCommentController.swift */,
 				FDE5BCCE27C5974E00343590 /* Generator.swift */,
 				FD61910427C8082100E5EDBD /* SavedComment.swift */,
 			);
@@ -104,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				FD61910227C806FC00E5EDBD /* FileManager.swift */,
+				FD61910A27C814E800E5EDBD /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -170,9 +177,11 @@
 			isa = PBXGroup;
 			children = (
 				FD86310227AD50C6000FC4D8 /* GenerationFormItem.swift */,
+				FD61910627C80B9F00E5EDBD /* GeneratorView.swift */,
 				FD86310427AD54AA000FC4D8 /* GeneratedCommentView.swift */,
 				FD86310627AD5722000FC4D8 /* SelectableButton.swift */,
 				FD6190FF27C805A600E5EDBD /* HomeView.swift */,
+				FD61910827C80C4000E5EDBD /* SavedCommentsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,13 +324,16 @@
 			files = (
 				FD61910027C805A600E5EDBD /* HomeView.swift in Sources */,
 				FDE5BCCF27C5974E00343590 /* Generator.swift in Sources */,
-				FD90EE5427B586DA002E6E63 /* StateController.swift in Sources */,
+				FD61910927C80C4000E5EDBD /* SavedCommentsView.swift in Sources */,
+				FD61910727C80B9F00E5EDBD /* GeneratorView.swift in Sources */,
+				FD90EE5427B586DA002E6E63 /* SavedCommentController.swift in Sources */,
 				FD86310327AD50C6000FC4D8 /* GenerationFormItem.swift in Sources */,
 				FD61910327C806FC00E5EDBD /* FileManager.swift in Sources */,
 				FD8630D527AD4CAE000FC4D8 /* CommentCardWriterApp.swift in Sources */,
 				FD0C70E327B3CF2B00DF51BF /* Comment.swift in Sources */,
 				FD86310727AD5722000FC4D8 /* SelectableButton.swift in Sources */,
 				FD86310527AD54AB000FC4D8 /* GeneratedCommentView.swift in Sources */,
+				FD61910B27C814E800E5EDBD /* Date.swift in Sources */,
 				FD61910527C8082100E5EDBD /* SavedComment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

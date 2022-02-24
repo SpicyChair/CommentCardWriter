@@ -11,6 +11,8 @@ import MobileCoreServices
 struct GeneratedCommentView: View {
     
     @EnvironmentObject var comment:Comment
+    @EnvironmentObject var savedController: SavedCommentController
+    
     var generator:Generator = Generator()
 
     
@@ -25,6 +27,12 @@ struct GeneratedCommentView: View {
                     HStack {
                         Button("Copy to Clipboard") {
                             UIPasteboard.general.setValue(generator.generate(comment: comment), forPasteboardType: "public.plain-text")
+                        }
+                    }
+                    HStack {
+                        Button("Save") {
+                            savedController.savedComments.append(SavedComment(commentText:(generator.generate(comment: comment))))
+                            savedController.saveToFile()
                         }
                     }
                     

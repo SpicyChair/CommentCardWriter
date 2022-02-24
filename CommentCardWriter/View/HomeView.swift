@@ -10,17 +10,21 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @EnvironmentObject var comment: Comment
-    var ratings: [String] = ["1", "2", "3", "4", "5"]
-    
-    
     var body: some View {
         TabView {
-            GeneratorView()
-                .tabItem {
-                    Image(systemName: "square.and.pencil")
-                    Text("Generate")
-                }
+            TabView {
+                        GeneratorView()
+                            .tabItem {
+                                Image(systemName: "square.and.pencil")
+                                Text("Absences")
+                            }
+                        SavedCommentsView()
+                            .tabItem {
+                                Image(systemName: "chart.pie")
+                                Text("Statistics")
+                            }
+                            .environmentObject(SavedCommentController())
+                    }
             
             
         }

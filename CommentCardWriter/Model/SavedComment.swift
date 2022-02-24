@@ -12,8 +12,10 @@ class SavedComment: Codable {
     var date:Date
     var commentText:String
     
+    
     init(commentText:String) {
         self.date = Date.now
+        self.commentText = commentText
     }
     
     required init(from decoder: Decoder) throws {
